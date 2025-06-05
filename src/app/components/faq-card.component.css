@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: var(--spacing-400);
+    border-radius: 1rem;
+    width: clamp(20rem, 70dvw, 37.5rem);
+    box-shadow: 0 2rem 5rem var(--color-box-shadow);
+    gap: var(--spacing-400);
+
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline { 
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.open {
+    display: block;
+}
+
+.loading-spinner {
+    background: var(--color-purple-950);
+}
+
+
+

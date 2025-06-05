@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+
+    /* Color */
+
+    --color-purple-950: hsl(292, 42%, 14%);
+    --color-purple-600: hsl(292, 16%, 49%);
+    --color-purple-100: hsl(275, 100%, 97%);
+
+    --color-violet-600: hsl(281, 83%, 54%);
+
+    --color-white:      hsl(0, 0%, 100%);
+    --color-black:      hsl(0, 0%, 0%);
+
+    --color-box-shadow: hsla(292, 42%, 14%, 0.2);
+
+    /* Typography */
+
+    --font-size-preset-1: 3.5rem;     /* 56px */
+    --font-size-preset-2: 1.125rem;   /* 18px */
+    --font-size-preset-3: 1rem;       /* 16px */
+
+    --line-height-preset-1: 4.125rem; /* 66px */
+    --line-height-preset-2: 1.125rem; /* 18px */
+    --line-height-preset-3: 1.5rem;   /* 24px */
+
+    --font-family: 'Work Sans', sans-serif;
+
+    --font-weight-regular:  400;
+    --font-weight-semibold: 600;
+    --font-weight-bold:     700;
+
+    /* Spacing */
+
+    --spacing-100: 0.5rem;  /* 8px */
+    --spacing-200: 1rem;    /* 16px */
+    --spacing-300: 1.5rem;  /* 24px */
+    --spacing-400: 2rem;    /* 32px */
+    --spacing-500: 2.5rem;  /* 40px */
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100dvh;
+}
+
+img, svg, picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--color-purple-100);
+    background-image: url('/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: var(--font-family);
+    font-size: var(--font-size-preset-3);
+    line-height: var(--line-height-preset-3);
+    color: var(--color-purple-600);
+    display: grid;
+    place-content: center;
+
+}
+
+h1 {
+    font-size: var(--font-size-preset-1);
+    color: var(--color-purple-950);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-preset-1);
+}
+
+.faq-item:first-of-type {
+    .faq-item--inner {
+        padding-block-start: 0;
+    }
+}
+
+.faq-item:last-of-type .faq-item--inner {
+    border-bottom: none;   
+}

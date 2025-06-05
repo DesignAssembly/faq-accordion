@@ -1,0 +1,17 @@
+<div class="faq-item--inner">
+    <button class="faq-question" (click)="toggle()" tabindex="0" [attr.aria-expanded]="isOpen()"
+            [attr.aria-controls]="'faq-answer-' + faq()?.id">
+        {{ faq()?.question}}
+        <img [src]="'/images/' +  (isOpen() ? 'icon-minus.svg' : 'icon-plus.svg')">
+    </button>
+
+
+
+    <div class="faq-answer__wrapper" [class.open]="isOpen()">
+        <div class="faq-answer">
+            {{ faq()?.answer}}
+        </div>
+    </div>
+
+</div>
+
